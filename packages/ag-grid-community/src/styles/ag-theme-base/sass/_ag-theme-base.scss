@@ -1,6 +1,6 @@
 @import "../../mixins/ag-theme-mixins";
 
-@if $icon-font-family == 'agGridBalham' or $icon-font-family == 'agGridMaterial' or $icon-font-family == 'agGridClassic' {
+@if $icon-font-family == 'agGridFinance' or $icon-font-family == 'agGridMaterial' or $icon-font-family == 'agGridClassic' {
     @font-face {
         font-family: '#{$icon-font-family}';
         src: url("data:application/x-font-ttf;charset=utf-8;base64,#{$icons-data}") format('truetype');
