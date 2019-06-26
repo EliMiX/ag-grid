@@ -41,11 +41,11 @@ include '../documentation-main/documentation_header.php';
             <th>Description</th>
         </tr>
         <tr>
-            <td class="theme-name-cell"><code>ag-theme-balham<br/>ag-theme-balham-dark</code></td>
+            <td class="theme-name-cell"><code>ag-theme-finance<br/>ag-theme-finance-dark</code></td>
             <td>
                 <p>
-                    Flat themes for professional applications. <code>ag-theme-balham-dark</code> is a dark
-                    version of <code>ag-theme-balham</code>.
+                    Flat themes for professional applications. <code>ag-theme-finance-dark</code> is a dark
+                    version of <code>ag-theme-finance</code>.
                 </p>
                 <p>
                     <span class="reccommendation">Recommendation:</span>
@@ -78,7 +78,7 @@ include '../documentation-main/documentation_header.php';
                 </p>
                 <p>
                     <span class="reccommendation">Recommendation:</span>
-                    These themes look old. Prefer the <code>ag-theme-balham</code> theme and use
+                    These themes look old. Prefer the <code>ag-theme-finance</code> theme and use
                     SASS variables to change the colors if required.
                 </p>
             </td>
@@ -107,7 +107,7 @@ include '../documentation-main/documentation_header.php';
     </p>
 
     <snippet language="html">
-        &lt;div id="myGrid" class="ag-theme-balham"&gt;&lt;/div&gt;
+        &lt;div id="myGrid" class="ag-theme-finance"&gt;&lt;/div&gt;
     </snippet>
 
     <p>
@@ -115,7 +115,7 @@ include '../documentation-main/documentation_header.php';
     </p>
 
     <snippet language="html">
-        &lt;div id="myGrid" class="ag-theme-balham-dark"&gt;&lt;/div&gt;
+        &lt;div id="myGrid" class="ag-theme-finance-dark"&gt;&lt;/div&gt;
     </snippet>
 
 
@@ -125,13 +125,13 @@ include '../documentation-main/documentation_header.php';
         The Balham theme comes in two versions: 1) light and 2) dark. Below shows examples of each type.
     </p>
 
-    <p>Example Balham Light (ag-theme-balham)</p>
+    <p>Example Balham Light (ag-theme-finance)</p>
 
-<?= example('Balham Theme', 'theme-balham', 'generated', array( 'enterprise' => true, 'processVue' => true )) ?>
+<?= example('Balham Theme', 'theme-finance', 'generated', array( 'enterprise' => true, 'processVue' => true )) ?>
 
-    <p>Example Balham Dark (ag-theme-balham-dark)</p>
+    <p>Example Balham Dark (ag-theme-finance-dark)</p>
 
-<?= example('Balham Theme (dark)', 'theme-balham-dark', 'generated', array( 'enterprise' => true, 'processVue' => true )) ?>
+<?= example('Balham Theme (dark)', 'theme-finance-dark', 'generated', array( 'enterprise' => true, 'processVue' => true )) ?>
 
     <h3>Change the Theme Accent Color</h3>
 
@@ -145,7 +145,7 @@ include '../documentation-main/documentation_header.php';
         // Set the colors to blue and amber
         $active: #E91E63; // pink-500 from https://www.materialui.co/colors
         // Import the ag-Grid balham theme
-        @import '~ag-grid/src/styles/ag-theme-balham/sass/ag-theme-balham';</snippet>
+        @import '~ag-grid/src/styles/ag-theme-finance/sass/ag-theme-finance';</snippet>
 
     <p>
         The recommended way to process your project's Scss files is through webpack, since it provides various loaders that optimize and reduce the final size of the bundle.
