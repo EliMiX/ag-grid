@@ -22,11 +22,11 @@ $getRowNodeApi = [
     ['getDisplayedRowCount()',
     'Returns the total number of displayed rows.'
     ],
-    ['getFirstDisplayedRow()',
-    'Get the index of the first displayed row due to scrolling (includes not visible rendered rows in the buffer)'
+    ['getFirstDisplayedRow(excludeBuffer?)',
+    'Get the index of the first displayed row due to scrolling (includes not visible rendered rows in the buffer). If excludeBuffer set to true, will exclude the rows that do not appear on the screen (but are rendered due to buffer)'
     ],
-    ['getLastDisplayedRow()',
-    'Get the index of the last displayed row due to scrolling (includes not visible rendered rows in the buffer)'
+    ['getLastDisplayedRow(excludeBuffer?)',
+    'Get the index of the last displayed row due to scrolling (includes not visible rendered rows in the buffer). If excludeBuffer set to true, will exclude the rows that do not appear on the screen (but are rendered due to buffer)'
     ]
 ];
 

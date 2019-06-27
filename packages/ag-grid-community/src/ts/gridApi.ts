@@ -1230,7 +1230,11 @@ export class GridApi {
         return this.getFirstDisplayedRow();
     }
 
-    public getFirstDisplayedRow(): number {
+    public getFirstDisplayedRow(excludeOffset?: boolean): number {
+        if (excludeOffset) {
+            const { top } = this.getVerticalPixelRange();
+            return this.getModel().getRowIndexAtPixel(top);
+        }
         return this.rowRenderer.getFirstVirtualRenderedRow();
     }
 
@@ -1239,7 +1243,11 @@ export class GridApi {
         return this.getLastDisplayedRow();
     }
 
-    public getLastDisplayedRow(): number {
+    public getLastDisplayedRow(excludeOffset?: boolean): number {
+        if (excludeOffset) {
+            const { bottom } = this.getVerticalPixelRange();
+            return this.getModel().getRowIndexAtPixel(bottom);
+        }
         return this.rowRenderer.getLastVirtualRenderedRow();
     }
 
